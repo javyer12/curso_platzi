@@ -4,7 +4,7 @@ console.group("Squeares")
 // const squareSides = 5;
 // console.log("the measure of the each square side is: " + squareSides + 'cm')
 
-function squarePerimeter(side) {
+function squarePerimeter(sides) {
   return  sides * 4; 
 } 
 // console.log("the perimeter of the square is: " + squarePerimeter + 'cm')
@@ -80,3 +80,76 @@ function areaCircle(radio) {
 //     "the area of your circle is: " + areaCircle + " cm²." 
 //     )
 console.groupEnd()
+
+
+//staring with html comunication
+//Square
+function calculateSquarePerimeter() {
+  const input = document.getElementById("inputSquare")
+  const value = input.value
+  const perimeter = squarePerimeter(value)
+  document.getElementById("perimeterResult").textContent = perimeter + " cm."
+}
+function calculateSquareArea() {
+  const input = document.getElementById("inputSquare")
+  const value = input.value
+  const area = squareArea(value)
+  document.getElementById("areaResult").textContent = area +  " cm²"
+}
+
+//circle
+function calculateCircleDiameter() {
+  const input = document.getElementById("inputCircle")
+  const value = input.value
+  const diameter = diameterCircle(value)
+  document.getElementById("diameterCircle").textContent = diameter + " cm"
+}
+function calculateCirclePerimeter() {
+  const input = document.getElementById("inputCircle")
+  const value = input.value
+  const perimeter = circumferenceCircle(value)
+  const data = Math.floor(perimeter)
+  document.getElementById("perimeterCircle").innerHTML =  "the area is: " + data + " cm"
+}
+function calculateCircleArea() {
+  const input = document.getElementById("inputCircle")
+  const value = input.value
+  const area = circumferenceCircle(value)
+  const data = Math.round(area)
+  document.getElementById("areaCircle").innerHTML = area + " cm², result with decimals."
+  document.getElementById("areaCircle2").innerHTML = data + " cm², result rounded "
+}
+
+// triangle
+
+function calculateTrianglePerimeter() {
+  const input = document.getElementById("inputTriangle")
+  const input2 = document.getElementById("inputTriangle2")
+  const input3 = document.getElementById("inputTriangle3")
+  const leftSide = Number(input.value)
+  const rightSide = Number(input2.value)
+  const base = Number(input3.value)
+  if (leftSide === 0) {
+    document.getElementById("trianglePerimeter").innerHTML = "Value 0 is not valid"
+  } else if (rightSide === 0) {
+    document.getElementById("trianglePerimeter").innerHTML = "Value 0 is not valid"
+  } else if (base === 0) {
+    document.getElementById("trianglePerimeter").innerHTML = "Value 0 is not valid"
+  } else {
+    const perimeter = trianglePerimeter(leftSide, rightSide, base)
+    document.getElementById("trianglePerimeter").innerHTML = "the perimeter of your triangle is: " + perimeter + " cm."
+  }
+}
+function calculateTriangleArea() {
+  const input = document.getElementById("inputTriangle")
+  const input2 = document.getElementById("inputTriangle2")
+  const input3 = document.getElementById("inputTriangle3")
+  if (input.value) {
+    document.getElementById("triangleArea").innerHTML = "you only need two values (second and third input)"
+  } else {
+    const value1 = input2.value
+    const value2 = input3.value
+    const area = triangleArea(value1, value2)
+    document.getElementById("triangleArea").innerHTML = "the area of your triangle is: "+ area + " cm"
+  }
+}

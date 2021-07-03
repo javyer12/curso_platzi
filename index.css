@@ -1,0 +1,41 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+section {
+  border-bottom: 3px solid rgb(192, 185, 185);
+  border-right: 3px solid rgb(189, 188, 188);
+  padding-left: 4%;
+  padding-bottom: 5%;
+  background: rgba(167, 165, 165, 0.08);
+  box-shadow: 0 8px 12px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  /* width: 50%; */
+}
+h2 {
+  border-bottom: solid 2px rgb(80, 232, 246);
+  width: 70%;
+}
+h1,
+h4 {
+  text-align: center;
+}
+#inputTriangle,
+#inputTriangle2,
+#inputTriangle3 {
+  width: 40%;
+  margin: 0.5%;
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3%;
+}
+.footer-section img {
+  height: 25px;
+  width: 30px;
+  border: none;
+}

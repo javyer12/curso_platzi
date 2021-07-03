@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="./index.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate figures with js functions</title>
 </head>
 <body>
-    <h1>Geometric figures</h1>
+    <header>
+        <h1>Geometric figures</h1>
+        <h4>This is the first java script workshop</h4>
+    </header>
+    <section>
+        <h2>Calculate area and perimeter of your square</h2>
+        <label for="inputSquare">
+            Insert your squeare measure
+        </label>
+        <br/>
+        <br/>
+        <input type="number" placeholder="your measures?" id="inputSquare">
+        <button type="button" onclick="calculateSquarePerimeter()" >
+            Calculate perimeter
+        </button>
+        <button type="button" onclick="calculateSquareArea()">
+            Calculate area
+        </button>
+        <div class="footer-section">
+            <nav>
+                <p id="perimeterResult"></p>
+                <p id="areaResult"></p>
+            </nav>
+            <nav>
+                <button
+                onclick="location.reload()">
+                <img src="https://img.icons8.com/ios-filled/50/000000/update-left-rotation.png"/>
+                </button>
+            </nav>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Calculate diameter, area and perimeter of your circle</h2>
+        <label for="inputCircle">
+            Insert your circle radio
+        </label>
+        <br/>
+        <br/>
+        <input type="number" placeholder="your measures?" id="inputCircle">
+        <button type="button" onclick="calculateCircleDiameter()" >
+            Calculate diameter
+        </button>
+        <button type="button" onclick="calculateCirclePerimeter()" >
+            Calculate perimeter
+        </button>
+        <button type="button" onclick="calculateCircleArea()">
+            Calculate area
+        </button>
+        <div class="footer-section">
+            <nav>
+                <p id="diameterCircle"></p>
+                <p id="perimeterCircle"></p>
+                <p id="areaCircle"></p>
+                <p id="areaCircle2"></p>
+            </nav>
+            <nav>
+                <button
+                onclick="window.location.reload()">
+                <img src="https://img.icons8.com/ios-filled/50/000000/update-left-rotation.png"/>
+                </button>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <h2>Calculate area and perimeter of your triangle</h2>
+        <label for="inputTriangle">
+            Insert your triangle measure
+        </label>
+        <br/>
+        <br/>
+        <input type="number" placeholder="insert left-side measure" id="inputTriangle"><br/>
+        <input type="number" placeholder="insert right-side measure/height" id="inputTriangle2"><br/>
+        <input type="number" placeholder="insert base measure" id="inputTriangle3"><br/>
+        <button type="button" onclick="calculateTrianglePerimeter()" >
+            Calculate perimeter
+        </button>
+        <button type="button" onclick="calculateTriangleArea()">
+            Calculate area
+        </button>
+        <div class="footer-section">
+            <nav>
+                <p id="trianglePerimeter"></p>
+                <p id="triangleArea"></p>
+            </nav>
+            <nav>
+                <button
+                onclick="window.location.reload()">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/update-left-rotation.png"/>
+                </button>
+            </nav>
+        </div>
+    </section>
     <script src="./index.js"></script>
 </body>
 </html>
