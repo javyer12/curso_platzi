@@ -153,3 +153,4 @@ function calculateTriangleArea() {
     document.getElementById("triangleArea").innerHTML = "the area of your triangle is: "+ area + " cm"
   }
 }
+
