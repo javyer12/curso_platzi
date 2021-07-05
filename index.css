@@ -39,3 +39,12 @@ h4 {
   width: 30px;
   border: none;
 }
+#porcent-page {
+  background-color: rgb(21, 151, 151);
+  border: solid 3px rgba(9, 9, 161, 0.657);
+  border-radius: 5px;
+  color: white;
+  height: 25px;
+  width: 12.5%;
+  text-decoration: none;
+}

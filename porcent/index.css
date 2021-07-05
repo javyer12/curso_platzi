@@ -1,0 +1,52 @@
+.page-products {
+  display: flex;
+  width: 100%;
+  min-width: min-content;
+}
+body {
+  background-image: url("./img/fonfi.jpg");
+}
+
+.product {
+  background-color: rgba(211, 211, 211, 0.034);
+  /* border: solid gray 2px;
+  border-radius: 4%; */
+  /* height: 530px; */
+  /* min-height: 10%; */
+  max-height: 77vh;
+  padding-left: 2.5%;
+  margin: 1%;
+  max-width: 19%;
+
+  /*   
+    width: 700px;
+    height: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  gap: 20px;
+  color: white;
+
+  border-radius: 8px;
+  backdrop-filter: blur(1px);
+  /* background-color: rgba(0, 255, 98, 0.023); */
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 4px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 5px rgba(40, 40, 40, 0.35) solid;
+  border-right: 5px rgba(40, 40, 40, 0.35) solid;
+}
+
+.product img {
+  width: 80%;
+  height: 45%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.product button {
+  margin-bottom: 3%;
+}
+/* .quijote {
+  width: 70px;
+  height: 55px;
+  margin: auto;
+} */

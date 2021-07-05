@@ -154,3 +154,11 @@ function calculateTriangleArea() {
   }
 }
 
+// const des = 33;
+// const prec = 450
+// const total = (des / 100) * prec
+// const precioPagar= prec - total
+// console.log("precio total " + prec )
+// console.log("descuento: " + des )
+// console.log("cantidad descontada: " + total )
+// console.log("precio a pagar con descuento " + precioPagar)

@@ -8,3 +8,10 @@ curso practico de platzi sobre JavaScript
 - second step: set formulas on js file
 - third step: create functions
 - fourth step: to integrate html and js
+
+## taller #2: calculate percentages of a store
+
+- first step: define formulas
+- second step: set formulas on js file
+- third step: create functions
+- fourth step: to integrate html and js
