@@ -35,7 +35,22 @@ body {
   border-bottom: 5px rgba(40, 40, 40, 0.35) solid;
   border-right: 5px rgba(40, 40, 40, 0.35) solid;
 }
-
+h1 {
+  color: white;
+  text-align: center;
+}
+#back-main-page {
+  background-color: coral;
+  border: rgb(255, 255, 255) 2px solid;
+  color: white;
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 4.5%;
+  margin-left: 3.5%;
+  padding: ;
+  text-decoration: none;
+  width: 9%;
+}
 .product img {
   width: 80%;
   height: 45%;

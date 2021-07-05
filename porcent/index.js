@@ -26,34 +26,32 @@ function calculateDidcount(productPrice, productDis) {
       return Pricer - price
 }
 
-function popoterAction(originalPrice, discount) {
+function anaAction(originalPrice, discount) {
+    const Pricer = originalPrice
     const dis = discount
-    const pricer = originalPrice
-    const anaOperation = calculateDidcount(pricer, dis)
-    console.log(anaOperation)
-    
-    document.getElementById("total-ana").innerHTML = "Total price with " + dis + "% of discount, is:  " + anaOperation + "$"
-    
+    const price = (dis / 100) * Pricer
+    const total = Pricer - price
+    document.getElementById("total-ana").innerHTML = "Total price with " + dis + "% of discount, is:  " + total + "$"
 }
-function anaAction(originalPrice1, discount1) {
-    const dis = discount1
-    const pricer = originalPrice1
-    const anaOperation = calculateDidcount(pricer, dis)
-    console.log(anaOperation)
-    document.getElementById("total-popoter").innerHTML = "Total price with " + dis + "% of discount, is:  " + anaOperation + "$"
-    
+function popoterAction(originalPrice, discount) {
+    const Pricer = originalPrice
+    const dis = discount
+    const price = (dis / 100) * Pricer
+    const total = Pricer - price
+     return document.getElementById("total-popoter").innerHTML = "Total price with " + dis + "% of discount, is:  " + total + "$"
 }
 function quijoteAction(originalPrice, discount) {
+    const Pricer = originalPrice
     const dis = discount
-    const pricer = originalPrice
-    const anaOperation = calculateDidcount(pricer,dis)
-    document.getElementById("total-quijote").innerHTML = "Total price with " + dis + "% of discount, is:  " + anaOperation + "$"
-    
+    const price = (dis / 100) * Pricer
+    const total = Pricer - price
+    document.getElementById("total-quijote").innerHTML = "Total price with " + dis + "% of discount, is:  " + total + "$"
 }
 function vinciAction(originalPrice, discount) {
+    const Pricer = originalPrice
     const dis = discount
-    const pricer = originalPrice
-    const anaOperation = calculateDidcount(pricer,dis)
-    document.getElementById("total-vinci").innerHTML = "Total price with " + dis + "% of discount, is:  " + anaOperation + "$"
-    
+    const price = (dis / 100) * Pricer
+    const total = Pricer - price
+    document.getElementById("total-vinci").innerHTML = "Total price with " + dis + "% of discount, is:  " + total + "$"
 }
+
